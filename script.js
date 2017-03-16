@@ -66,7 +66,6 @@ function timeOut(){
     first_card_clicked=null;
     second_card_clicked=null;
     cards_can_be_clicked = true;
-
 }
 
 function display_stats(){
