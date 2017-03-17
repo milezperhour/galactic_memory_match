@@ -84,15 +84,20 @@ h1{
     text-align:center;
 }
 
+h4{
+    color: #b0fffa;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.5vw;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-align:center;
+}
+
 #container{
     width:100vw;
     height:100vh;
     position:relative;
     top:20vh;
-    /*background-image: url("images/spacescape.png");*/
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 120%;*/
 }
 
 #game-area{

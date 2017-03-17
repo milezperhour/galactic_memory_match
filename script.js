@@ -46,7 +46,7 @@ function card_clicked(){
             second_card_clicked=null;
             cards_can_be_clicked=true;
             if (match_counter===total_possible_matches){
-                console.log("You Won!");  //Displays a message that the user won
+                $('h4').text('You Won!');
             }
             else{
                 return;
@@ -84,5 +84,6 @@ function reset_stats(){
     matches=0;
     attempts=0;
     accuracy=0;
+    $('h4').text('');
     display_stats();
 }
