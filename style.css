@@ -3,6 +3,17 @@ body{
     padding:0;
 }
 
+#image_background{
+    margin:0;
+    height:100%;
+    width:100%;
+    position:fixed;
+    background-image: url('images/spacescape.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index:-1;
+}
+
 header{
     background-color:black;
     position:absolute;
@@ -18,12 +29,11 @@ nav>ul{
     list-style: none;
     text-align:center;
     position:relative;
-    top:2vh;
 }
 nav li{
     display:inline-block;
     margin: 0 15px 0 15px;
-    font-size:1.2em;
+    font-size:1.5vw;
 }
 
 nav a:link{
@@ -74,15 +84,20 @@ h1{
     text-align:center;
 }
 
+h4{
+    color: #b0fffa;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.5vw;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-align:center;
+}
+
 #container{
     width:100vw;
     height:100vh;
     position:relative;
     top:20vh;
-    background-image: url("images/spacescape.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 120%;
 }
 
 #game-area{
@@ -189,22 +204,24 @@ h1{
     text-align:center;
     position: relative;
     top: 1vw;
+    font-size:1.5vw;
 }
 
 button.reset{
     width: 80%;
-    height: 5%;
+    height: 10%;
     display:block;
     margin:auto;
     position:relative;
     top: 1.8vw;
     color:#b0fffa;
     font-family: 'Roboto', sans-serif;
-    font-size:1.2em;
+    font-size:1.5vw;
     border-radius:15px;
     background-color:black;
     border:none;
     box-shadow: 0 0 10px #b0fffa;
+    cursor:pointer;
 }
 
 /*-------ABOUT ME----------*/
@@ -291,7 +308,7 @@ button.reset{
     text-align:center;
     color: #b0fffa;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.2em;
+    font-size: 3vw;
     -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255,     255, 0.3)));
 }
 
@@ -299,7 +316,7 @@ button.reset{
     text-align:center;
     color: #b0fffa;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.2em;
+    font-size: 3vw;
     -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255,     255, 0.3)));
 }
 
@@ -307,7 +324,7 @@ button.reset{
     text-align:center;
     color: #b0fffa;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.2em;
+    font-size: 3vw;
     -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255,     255, 0.3)));
 }
 

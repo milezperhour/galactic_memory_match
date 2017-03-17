@@ -20,10 +20,9 @@ var matches = 0;
 var attempts  = 0;
 var accuracy = 0;
 var games_played = 0;
-var cards_can_be_clicked = true; //------------new variable for adding/removing clicks---------
+var cards_can_be_clicked = true;
 
 function card_clicked(){
-    //bouncer
     if(!cards_can_be_clicked){
         return;
     }
@@ -31,11 +30,10 @@ function card_clicked(){
     $(this).toggleClass('hide_back');
     if (first_card_clicked===null){
         first_card_clicked=this;
-
         return;
-    } //end of: if first card is clicked, do this
+    }
     else{
-        cards_can_be_clicked=false; //---------turns off clicking cards---------
+        cards_can_be_clicked=false;
         second_card_clicked=this;
         attempts++;
         display_stats();
@@ -48,16 +46,15 @@ function card_clicked(){
             second_card_clicked=null;
             cards_can_be_clicked=true;
             if (match_counter===total_possible_matches){
-                console.log("You Won!");  //Displays a message that the user won
+                $('h4').text('You Won!');
             }
             else{
                 return;
             }
 
         }
-        else{ //if first card clicked !== second card clicked
+        else{
             setTimeout (timeOut, 2000);
-
             return;
         }
     } // end of: check if both card clicked are equal
@@ -68,8 +65,7 @@ function timeOut(){
     $(second_card_clicked).toggleClass('hide_back');
     first_card_clicked=null;
     second_card_clicked=null;
-    cards_can_be_clicked = true; //---------turns on clicking cards---------
-
+    cards_can_be_clicked = true;
 }
 
 function display_stats(){
@@ -88,5 +84,6 @@ function reset_stats(){
     matches=0;
     attempts=0;
     accuracy=0;
+    $('h4').text('');
     display_stats();
 }
